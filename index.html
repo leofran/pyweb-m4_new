@@ -51,6 +51,7 @@
   function getJson(){
     $.getJSON(advice_url,function(data){
     prophecies=data['prophecies'];
+    console.log(data);
     set_content_in_divs(prophecies);
     });
   }
